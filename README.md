@@ -1,7 +1,7 @@
 # CommunicationServices_GenerateUserToken
-#This is a simple Azure Communication Services JavaScript program to generate user tokens for two users 
+#This is a simple Azure Communication Services JavaScript program to generate an ACS Identity user & 24-hr access token.  Run it twice for two users 
 #using the Azure Communication Identity Library
-#This application allows you to refresh the access tokens for both users
+#This application also includes a refresh-access-token.js that allows you to refresh the access tokens for both users
 
 
 #Author:  Jameela Esa
