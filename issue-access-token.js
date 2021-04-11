@@ -5,7 +5,7 @@ const main = async () => {
 
   // This code demonstrates how to fetch your connection string
 // from an environment variable.
-const connectionString = "<putconnectionstringhere>";
+const connectionString = "<YOUR ACS CONNECTIONSTRING>";
 
 // Instantiate the identity client
 const identityClient = new CommunicationIdentityClient(connectionString);
@@ -22,8 +22,8 @@ console.log(`\nIssued an access token with 'voip' scope that expires at ${expire
 console.log(token);
 
 
-// // Value of identityResponse represents the Azure Communication Services identity stored during identity creation and then used to issue the tokens being refreshed
-let refreshedTokenResponse = await identityClient.getToken(identityResponse, ["voip"]);
+// Refresh access tokens 
+//RUN refresh-access-token.js
 
 
 //await identityClient.revokeTokens(identityResponse);
